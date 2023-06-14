@@ -1,4 +1,4 @@
-bessa-pypi-template
+bessapypitemplate
 ===================
 
 A template for creating a new PyPI package.

@@ -20,7 +20,7 @@ for path in src_dir:
 
 # -- Project information ------------------------------------------------------
 # Source: https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
-project = 'bessa-pypi-template'
+project = 'bessapypitemplate'
 author = 'Your Name'
 copyright = '2023, Your Name'
 version = '0.0.1'
