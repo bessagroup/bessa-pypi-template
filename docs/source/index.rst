@@ -1,7 +1,16 @@
 bessapypitemplate
-===================
+=================
 
-A template for creating a new PyPI package.
+.. toctree::
+   :maxdepth: 3
+   :caption: API Documentation
+   :hidden:
+   :glob:
+       
+   apisource/bessapypitemplate
+   apisource/modules
+
+.. include:: readme.rst
 
 Indices and tables
 ==================
