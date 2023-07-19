@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>&lt;no title&gt; &mdash; bessapypitemplate 0.0.1 documentation</title>
+  <title>Summary &mdash; bessapypitemplate 0.0.1 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/readthedocs-custom.css" type="text/css" />
@@ -65,7 +65,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">&lt;no title&gt;</li>
+      <li class="breadcrumb-item active">Summary</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -74,7 +74,78 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p>A template for creating a new PyPI package.</p>
+  <a class="reference internal image-reference" href="https://user-images.githubusercontent.com/25851824/200928507-a65327f9-bc70-4c12-beaa-bc6ba74d968e.svg"><img alt="logo" class="align-center" src="https://user-images.githubusercontent.com/25851824/200928507-a65327f9-bc70-4c12-beaa-bc6ba74d968e.svg" width="60%" /></a>
+<p><a class="reference external" href="https://bessagroup.github.io/bessa-pypi-template/">Docs</a> | <a class="reference external" href="https://github.com/bessagroup/bessa-pypi-template">GitHub</a></p>
+<p><strong>First publication:</strong> June 14, 2023</p>
+<section id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">¶</a></h1>
+<p>This repository serves as a template for Python code. The template is compliant to the <a class="reference external" href="https://github.com/bessagroup/python_code_of_conduct">Bessa Research Group Python Development Code of Conduct</a>.</p>
+<p>The repository is suitable for any Python code that works in version 3.7+.</p>
+</section>
+<section id="statement-of-need">
+<h1>Statement of need<a class="headerlink" href="#statement-of-need" title="Permalink to this heading">¶</a></h1>
+<p>Members of the Bessa Research Group can use this template to create new Python repositories. The template is compliant to the <a class="reference external" href="https://github.com/bessagroup/python_code_of_conduct">Bessa Research Group Python Development Code of Conduct</a>.</p>
+</section>
+<section id="authorship">
+<h1>Authorship<a class="headerlink" href="#authorship" title="Permalink to this heading">¶</a></h1>
+<dl class="simple">
+<dt><strong>Authors</strong>:</dt><dd><ul class="simple">
+<li><p>Martin van der Schelling (<a class="reference external" href="mailto:M&#46;P&#46;vanderSchelling&#37;&#52;&#48;tudelft&#46;nl">M<span>&#46;</span>P<span>&#46;</span>vanderSchelling<span>&#64;</span>tudelft<span>&#46;</span>nl</a>)</p></li>
+</ul>
+</dd>
+<dt><strong>Authors afilliation:</strong></dt><dd><ul class="simple">
+<li><p>Bessa Research Group &#64; Delft University of Technology</p></li>
+</ul>
+</dd>
+<dt><strong>Maintainer:</strong></dt><dd><ul class="simple">
+<li><p>Martin van der Schelling (<a class="reference external" href="mailto:M&#46;P&#46;vanderSchelling&#37;&#52;&#48;tudelft&#46;nl">M<span>&#46;</span>P<span>&#46;</span>vanderSchelling<span>&#64;</span>tudelft<span>&#46;</span>nl</a>)</p></li>
+</ul>
+</dd>
+<dt><strong>Maintainer afilliation:</strong></dt><dd><ul class="simple">
+<li><p>Bessa Research Group &#64; Delft University of Technology</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<section id="getting-started">
+<h1>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this heading">¶</a></h1>
+<section id="using-this-as-a-template-for-a-new-repository">
+<h2>Using this as a template for a new repository<a class="headerlink" href="#using-this-as-a-template-for-a-new-repository" title="Permalink to this heading">¶</a></h2>
+<p>When you create a new repository through the GitHub website, you can select this template as a starting point. This will create a new repository with the same structure as this one. You can then clone the repository to your local machine and start working on your code and replacing the template code with your own code.</p>
+</section>
+<section id="using-this-as-a-template-for-an-existing-repository">
+<h2>Using this as a template for an existing repository<a class="headerlink" href="#using-this-as-a-template-for-an-existing-repository" title="Permalink to this heading">¶</a></h2>
+<p>If you have an existing repository, you can clone the repository to your local machine and copy the necessary files over manually.</p>
+</section>
+<section id="github-pages-functionality">
+<h2>GitHub pages functionality<a class="headerlink" href="#github-pages-functionality" title="Permalink to this heading">¶</a></h2>
+<p>If you want to use the GitHub Pages functionalities of this template repository, please check the box to clone all branches. The sphinx documentation is build automatically in the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch with GitHub Workflows whenever you push to the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p>
+<p>In order to commit and push to the <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> branch, you need to authenticate the workflow with your GitHub credentials. This is done with GitHub secrets. This is not done automatically when you clone the repository, so you need to do this manually:</p>
+<ol class="arabic simple">
+<li><p>Go to your GitHub repository page and click on the “Settings” tab.</p></li>
+<li><p>Click on “Secrets” in the left sidebar menu.</p></li>
+<li><p>Click on the “New secret” button.</p></li>
+<li><p>Enter <code class="docutils literal notranslate"><span class="pre">GHPAGES_TOKEN</span></code> as the name of the secret.</p></li>
+<li><p>Generate a new token by clicking on the “Generate a new token” link.</p></li>
+<li><p>Give the token a name and select the appropriate scopes.</p></li>
+<li><p>Click on the “Generate token” button.</p></li>
+<li><p>Copy the generated token and paste it into the “Value” field.</p></li>
+<li><p>Click on the “Add secret” button to save the token.</p></li>
+</ol>
+<p>Once you’ve created the secret <code class="docutils literal notranslate"><span class="pre">GHPAGES_TOKEN</span></code>, it can be used in your GitHub workflow scripts by referencing it using the <code class="docutils literal notranslate"><span class="pre">${{</span> <span class="pre">secrets.GHPAGES_TOKEN</span> <span class="pre">}}</span></code> syntax. This provides a secure way to authenticate with the GitHub API and perform actions such as pushing to a repository, creating issues, and deploying to GitHub Pages.</p>
+<p>More about GitHub secrets can be found <a class="reference external" href="https://docs.github.com/en/actions/security-guides/encrypted-secrets">here</a>.</p>
+</section>
+</section>
+<section id="community-support">
+<h1>Community Support<a class="headerlink" href="#community-support" title="Permalink to this heading">¶</a></h1>
+<p>If you find any issues, bugs or problems with this template, please use the <a class="reference external" href="https://github.com/bessagroup/bessa-pypi-template/issues">GitHub issue tracker</a> to report them.</p>
+</section>
+<section id="license">
+<h1>License<a class="headerlink" href="#license" title="Permalink to this heading">¶</a></h1>
+<p>Copyright 2023, Martin van der Schelling</p>
+<p>All rights reserved.</p>
+<p>This project is licensed under the BSD 3-Clause License. See <a class="reference external" href="https://github.com/bessagroup/bessa-pypi-template/blob/main/LICENSE">LICENSE</a> for the full license text.</p>
+</section>
 
 
            </div>
