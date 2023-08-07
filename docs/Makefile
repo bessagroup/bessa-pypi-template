@@ -22,7 +22,7 @@ help:
 
 apidoc:
 	-rm -rf ./$(SOURCEDIR)/$(APIDOCDIR)/*
-	sphinx-apidoc -o ./$(SOURCEDIR)/$(APIDOCDIR)/ ../src/$(PACKAGENAME)
+	sphinx-apidoc -o ./$(SOURCEDIR)/$(APIDOCDIR)/ ../src/
 	@echo
 	@echo "Created API documentation using sphinx-apidoc. The source files are in $(APIDOCDIR)."
 
