@@ -72,8 +72,8 @@ instance/
 docs/_build/
 
 # Ignore _autosummary generated files
-docs/_autosummary/
-!docs/_autosummary/.gitkeep
+docs/source/_autosummary/
+!docs/source/_autosummary/.gitkeep
 
 # PyBuilder
 .pybuilder/
