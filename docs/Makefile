@@ -7,24 +7,23 @@ SPHINXOPTS    ?=
 SPHINXBUILD   ?= sphinx-build
 SOURCEDIR     = source
 BUILDDIR      = build
-APIDOCDIR     = apisource
+APIDOCDIR     = _autosummary
 
 # Put it first so that "make" without argument is like "make help".
 help:
 	@$(SPHINXBUILD) -M help "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-.PHONY: help apidoc Makefile
+.PHONY: help clean-autosummary html-open Makefile
 
 # Catch-all target: route all unknown targets to Sphinx using the new
 # "make mode" option.  $(O) is meant as a shortcut for $(SPHINXOPTS).
 %: Makefile
 	@$(SPHINXBUILD) -M $@ "$(SOURCEDIR)" "$(BUILDDIR)" $(SPHINXOPTS) $(O)
 
-apidoc:
-	-rm -rf ./$(SOURCEDIR)/$(APIDOCDIR)/*
-	sphinx-apidoc -o ./$(SOURCEDIR)/$(APIDOCDIR)/ ../src/
+clean-autosummary:
+	-rm -rf ./$(SOURCEDIR)/$(APIDOCDIR)/*.rst
 	@echo
-	@echo "Created API documentation using sphinx-apidoc. The source files are in $(APIDOCDIR)."
+	@echo "Removed all autosummary files in ./$(SOURCEDIR)/$(APIDOCDIR)/"
 
 html-open:
 	make html
