@@ -5,17 +5,16 @@ bessapypitemplate
    :maxdepth: 3
    :caption: API Documentation
    :hidden:
-   :glob:
        
-   apisource/bessapypitemplate
-   apisource/modules
+   rst_doc_files/example
+
+.. toctree::
+   :name: apitoc
+   :caption: API
+   :hidden:
+
+   Code <_autosummary/bessapypitemplate>
 
 .. include:: readme.rst
 
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
   
