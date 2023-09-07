@@ -8,7 +8,7 @@ the Bessa Group's conventions.
 Usage:
   import bessa-pypi-template
 
-Author: Martin van der Schelling (M.P.vanderSchelling@tudelft.nl)
+Author: Your Name (youremailadress@email.com)
 """
 
 #                                                                       Modules
@@ -23,8 +23,8 @@ from .example_module import add_one
 
 #                                                        Authorship and Credits
 # =============================================================================
-__author__ = 'Martin van der Schelling (M.P.vanderSchelling@tudelft.nl)'
-__credits__ = ['Martin van der Schelling']
+__author__ = 'Your Name (youremailadress@email.com)'
+__credits__ = ['Your Name']
 __status__ = 'Stable'
 # =============================================================================
 #
