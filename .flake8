@@ -2,15 +2,15 @@
 
 # Configuration compatible with Bessa Research Group Python Coding Style
 #
-# Version: March 8, 2023
+# Version: March 28, 2023
 
 
 # >>> UPDATE ACCORDING WITH YOUR PYTHON PROJECT
 
 # Exclude (additional) glob patterns from checks:
 extend-exclude =
-	docs/
-    tests/
+  docs/
+  tests/
 
 # <<< UPDATE ACCORDING WITH YOUR PYTHON PROJECT
 
@@ -19,10 +19,10 @@ extend-exclude =
 count = True
 
 # Set the maximum length that any line may be
-max-line-length = 119
+max-line-length = 79
 
 # Set the maximum length that a comment or docstring line may be
-max-doc-length = 119
+max-doc-length = 79
 
 # Set the number of spaces used for indentation
 indent-size = 4
@@ -48,7 +48,7 @@ extend-ignore = E226, E3, E731, C901
 # E242 : Tab after ‘,’
 # E704 : Multiple statements on one line (def)
 # W504 : Line break after binary operator
-# W505 : Doc line too long
+# W505 : Doc line too long (82 > 79 characters) 
 extend-select = E241, E242, E704, W504, W505
 
 # Ignore all errors F401 ('imported but unused') and E402 ('module level import

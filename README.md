@@ -52,28 +52,6 @@ When you create a new repository through the GitHub website, you can select this
 If you have an existing repository, you can clone the repository to your local machine and copy the necessary files over manually.
 
 
-### GitHub pages functionality
-
-If you want to use the GitHub Pages functionalities of this template repository, please check the box to clone all branches. The sphinx documentation is build automatically in the `gh-pages` branch with GitHub Workflows whenever you push to the `main` branch.
-
- 
-> In order to commit and push to the `gh-pages` branch, you need to authenticate the workflow with your GitHub credentials. This is done with GitHub secrets. This is not done automatically when you clone the repository, so you need to do this manually: 
->  
-> 1.  Go to your GitHub repository page and click on the "Settings" tab.
-> 2.  Click on "Secrets" in the left sidebar menu.
-> 3.  Click on the "New secret" button.
-> 4.  Enter "`GHPAGES_TOKEN`" as the name of the secret.
-> 5.  Generate a new token by clicking on the "Generate a new token" link.
-> 6.  Give the token a name and select the appropriate scopes.
-> 7.  Click on the "Generate token" button.
-> 8.  Copy the generated token and paste it into the "Value" field.
-> 9.  Click on the "Add secret" button to save the token.
-> 
-> Once you've created the secret `GHPAGES_TOKEN`, it can be used in your GitHub workflow scripts by referencing it using the `${{ secrets.GHPAGES_TOKEN }}` syntax. This provides a secure way to authenticate with the GitHub API and perform actions such as pushing to a repository, creating issues, and deploying to GitHub Pages.
-> 
-> More about GitHub secrets can be found [here](https://docs.github.com/en/actions/security-guides/encrypted-secrets).
-
-
 ## Community Support
 
 If you find any **issues, bugs or problems** with this template, please use the [GitHub issue tracker](https://github.com/bessagroup/bessa-pypi-template/issues) to report them.
