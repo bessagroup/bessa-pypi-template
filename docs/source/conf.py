@@ -40,7 +40,8 @@ extensions = ['sphinx.ext.duration',
               'sphinx.ext.autosummary',
               'sphinx.ext.intersphinx',
               'sphinx.ext.viewcode',
-              'sphinx_autodoc_typehints']
+              'sphinx_autodoc_typehints',
+              'sphinx_copybutton']
 
 # Source: https://www.sphinx-doc.org/en/master/usage/configuration.html#confval-source_suffix
 source_suffix = {'.rst': 'restructuredtext', }
