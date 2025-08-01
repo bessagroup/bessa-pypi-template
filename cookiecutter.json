@@ -1,0 +1,15 @@
+{
+  "full_name": "Martin van der Schelling",
+  "email": "m.p.vanderschelling@tudelft.nl",
+  "affiliation": "Brown University",
+  "github_username": "mpvanderschelling",
+  "pypi_package_name": "my-python-package",
+  "project_name": "Python Boilerplate",
+  "project_slug": "{{ cookiecutter.pypi_package_name.replace('-', '_') }}",
+  "project_short_description": "A short description of the package.",
+  "project_keywords": "keyword1, keyword2, keyword3",
+  "pypi_username": "{{ cookiecutter.github_username }}",
+  "first_version": "0.1.0",
+  "minimal_python_version": "3.8",
+  "__gh_slug": "{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}"
+}
